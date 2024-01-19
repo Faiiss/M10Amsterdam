@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "title": "Project 1",
+            "image": "/Beeldmateriaal//Bostheater/Foto 1.png",
+            "link": "https://example.com/project1"
+        },
+        {
+            "title": "Project 1",
+            "image": "/Beeldmateriaal//Bostheater/Foto 1.png",
+            "link": "https://example.com/project1"
+        },
+        {
+            "title": "Project 1",
+            "image": "/Beeldmateriaal//Bostheater/Foto 1.png",
+            "link": "https://example.com/project1"
+        },
+        {
+            "title": "Project 1",
+            "image": "/Beeldmateriaal//Bostheater/Foto 1.png",
+            "link": "https://example.com/project1"
+        },
+        {
+            "title": "Project 1",
+            "image": "/Beeldmateriaal//Bostheater/Foto 1.png",
+            "link": "https://example.com/project1"
+        },
+        {
+            "title": "Project 1",
+            "image": "/Beeldmateriaal//Bostheater/Foto 1.png",
+            "link": "https://example.com/project1"
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+/* Style the Slick slider container */
+.slider {
+  width: 100%;
+  margin: 0;
+}
+
+/* Style the individual slides */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio (adjust as needed) */
+  overflow: hidden;
+  margin: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the entire slide */
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.slick-next {
+  right: 50px;
+}
+
+.slick-prev {
+  left: 50px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  z-index: 2;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-slide {
+  float: left;
+  height: 100vh;
+  min-height: 1px;
+}
+
+.text {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: red;
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 50rem;
+  text-align: center;
+  border-radius: 1rem 1rem 0rem 0rem;
+  transition: 0.4s;
+}
+
+.text a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.text a:hover,
+.text:hover {
+  color: #2c2c2c;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .text {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: red;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 18rem;
+    height: 8rem;
+    text-align: center;
+    border-radius: 1rem 1rem 0rem 0rem;
+    transition: 0.4s;
+  }
+
+  .text a:hover,
+  .text:hover {
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .text {
+    top: 94%;
+  }
+}

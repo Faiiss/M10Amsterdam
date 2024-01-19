@@ -1,0 +1,63 @@
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-icon i {
+    font-size: 1rem;
+    /* Adjust the font size as needed */
+    color: red;
+    /* Adjust the color as needed */
+}
+
+/* Additional styling for the button */
+.search-icon, button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 8px;
+    border: .2rem solid red;
+    border-radius: 1rem;
+    margin-right: 10px;
+    color: #2c2c2c;
+    font-size: 14px;
+}
+
+.search-button,
+.contact-button {
+    padding: 8px 12px;
+    background-color: red;
+    /* Adjust the background color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.search-button:hover,
+.contact-button:hover {
+    background-color: #fff;
+    color: red;
+}
+
+.search input:focus {
+    border-color: red; /* Adjust the border color when focused */
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Add a box shadow when focused */
+}

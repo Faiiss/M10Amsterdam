@@ -1,0 +1,135 @@
+.project_amsterdam {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    background: red;
+    padding: 15rem 5rem 5rem 5rem;
+    width: 100%;
+}
+.project_amsterdam_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background: #eee;
+    padding: 0rem 5rem 5rem 5rem;
+    width: 100%;
+}
+
+.project_amsterdam_2>h2 {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 4rem;
+    background: #ff0000;
+    padding: 0rem 2rem 2rem 2rem;
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+
+
+.project_text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.project_text>h2 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.project_text>p {
+    font-size: 2rem;
+    width: 40ch;
+    color: #fff;
+}
+
+.project_img {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.project_img::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* 1:1 aspect ratio (width/height) */
+    box-shadow: 0px 20px 64px -21px rgba(0, 0, 0, 0.57);
+}
+
+.project_img>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+
+}
+@media (max-width: 1024px) {
+    .text {
+      top: 94%;
+    }
+  
+    .project_amsterdam {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: auto;
+      background: red;
+      padding: 15rem 3rem 3rem 3rem;
+      width: 100%;
+    }
+  
+    .project_text>p {
+      font-size: 1.2rem;
+      width: 40ch;
+      color: #fff;
+    }
+  }
+@media only screen and (max-width: 320px) {
+    .project_text {
+        gap: 2rem;
+    }
+
+    .project_text>p {
+        font-size: 1rem;
+        width: 100%;
+        /* Adjust as needed */
+        color: #fff;
+        text-align: center;
+    }
+
+    .project_text>h2 {
+        font-size: 3rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .project_amsterdam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        background: red;
+        padding: 15rem 0.5rem 0.5rem 0.5rem;
+        width: 100%;
+        gap: 2rem;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .project_img {
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,82 @@
+
+// .project-details{
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+//     background: white;
+// }
+// .detail_project_amsterdam {
+//     height: 100vh;
+//     margin: 0rem 0rem 30rem 0rem;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+//     background: white;
+// }
+// .detail_img{
+//     width: 100%;
+//     position: relative;
+// }
+// // .detail_title {
+// //     font-size: 5rem;
+// //     color: #fff;
+// //     position: absolute;
+// //     top: 8rem;
+// //     left: 34rem;
+// //     background: red;
+// //     padding: 1rem;
+// //     z-index: 100;
+// //     border-radius: 1rem;
+// // }
+// .detail_title {
+//     font-size: 5rem;
+//     color: #fff;
+//     position: absolute;
+//     top: 25%; /* Center vertically */
+//     left: 50%; /* Center horizontally */
+//     transform: translate(-50%, -50%); /* Adjust position with transform */
+//     background: red;
+//     padding: 1rem;
+//     z-index: 100;
+//     border-radius: 1rem;
+// }
+.detail_project_amsterdam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+/* Style the project image */
+.detail_img {
+    width: 40%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Style the project information */
+.detail_info {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Style the project title */
+.detail_title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Style the project text */
+.detail_tekst {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 50ch;
+}
