@@ -1,0 +1,47 @@
+form {
+    width: 50rem;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+form>h3{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+  }
+
+  input[type="submit"] {
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #990000;
+  }
+
+  .contact_amsterdam_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}

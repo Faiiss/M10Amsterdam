@@ -54,37 +54,33 @@
         <li><a href="{{ route('over-ons') }}">Over ons</a></li>
         <li><a href="{{ route('contact') }}">Contact</a></li>
     </ul>
-    <section class="project_amsterdam">
-        <div class="project_text">
-            <h2>Projecten</h2>
+
+    <section class="overons_amsterdam">
+        <div class="overons_text">
+            <h2>Over ons</h2>
             <p>Stap binnen in onze wereld van projecten die de kloppende hartslag van Amsterdam weerspiegelen. Elk
                 project is een symfonie van innovatie en doordachte ontwikkeling, waarbij we streven naar een blijvende
                 impact op de stad. Van eigentijdse architectuur tot levendige ontmoetingsplekken; onze projecten ademen
                 leven in de stedelijke dynamiek. Verken met ons de horizon van mogelijkheden en ontdek hoe wij bijdragen
                 aan de voortdurende transformatie van Amsterdam.</p>
         </div>
-        <div class="project_img">
-            <img src="/images/Beeldmateriaal/Spinoza20first/Foto 2.jpg" alt="">
+        <div class="overons_img">
+            <img src="/images/Beeldmateriaal/Verhalenhuis Nieuw-West Osdorpplein/MRP_Osdorpplein_LR-0005.jpg" alt="">
         </div>
     </section>
-    <section class="project_amsterdam_2">
-        <h2>Alle projecten</h2>
-        <!-- resources/views/projects.blade.php -->
+    <section class="info_amsterdam-2">
+        <div class="info_text-2">
+            <p>
 
-        <ul class="project-list" id="projectList">
-            @foreach($projects as $project)
-            <li class="project-list-item">
-                <img src="{{ $project->image }}" alt="{{ $project->title }}" class="project-img">
-                <h3 class="project-title">{{ $project->title }}</h3>
-                <a href="{{ route('project.details', ['id' => $project->id]) }}">
-                    <button class="project-button">Meer...</button>
-                </a>
-            </li>
-            @endforeach
-        </ul>
+                Welkom in onze wereld van projecten, waar het kloppende hart van Amsterdam tot leven komt. Elk project is een meesterwerk van innovatie en doordachte ontwikkeling, doordrenkt met de ambitie om een blijvende impact op de stad te creëren. Van eigentijdse architecturale hoogstandjes tot levendige ontmoetingsplekken; onze projecten ademen leven in de stedelijke dynamiek.
+                <br><br>
+                Bij ons gaat het niet alleen om het bouwen van structuren, maar om het vormgeven van de toekomst van Amsterdam. We streven ernaar om meer te zijn dan alleen bouwers; we zijn de makers van verandering, de visionairs van stedelijke transformatie. Onze projecten vormen de horizon van mogelijkheden, en wij nodigen je uit om met ons mee te gaan op deze ontdekkingsreis.
+                <br><br>
+                Ontdek hoe wij bijdragen aan de voortdurende transformatie van Amsterdam, het weefsel van de stad versterken en een erfenis van duurzame ontwikkeling achterlaten. Stap binnen en leer ons kennen, want bij Heddes gaat het niet alleen om gebouwen, maar om het creëren van een betere, levendigere toekomst voor onze geliefde stad.
+            </p>
 
+        </div>
     </section>
-
 
     <script>
         // Look for .hamburger
@@ -101,7 +97,7 @@
         });
     </script>
     @vite('resources/js/app.js')
-    @vite('resources/js/cards.js')
+
     </script>
     <footer>
         <img src="/images/Logo_of_Gemeente_Amsterdam.svg" alt="Logo" class="footer-logo">

@@ -1,4 +1,4 @@
-.project_amsterdam {
+.overons_amsterdam {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -8,8 +8,7 @@
     padding: 15rem 5rem 5rem 5rem;
     width: 100%;
 }
-
-.project_amsterdam_2 {
+.overons_amsterdam_2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +19,7 @@
     width: 100%;
 }
 
-.project_amsterdam_2>h2 {
+.overons_amsterdam_2>h2 {
     font-size: 5rem;
     color: #fff;
     margin-bottom: 4rem;
@@ -30,7 +29,7 @@
 }
 
 
-.project_text {
+.overons_text {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -38,24 +37,24 @@
     flex-wrap: wrap;
 }
 
-.project_text>h2 {
+.overons_text>h2 {
     font-size: 5rem;
     color: #fff;
 }
 
-.project_text>p {
+.overons_text>p {
     font-size: 2rem;
     width: 40ch;
     color: #fff;
 }
 
-.project_img {
+.overons_img {
     position: relative;
     width: 80%;
     overflow: hidden;
 }
 
-.project_img::before {
+.overons_img::before {
     content: "";
     display: block;
     padding-top: 100%;
@@ -63,7 +62,7 @@
     box-shadow: 0px 20px 64px -21px rgba(0, 0, 0, 0.57);
 }
 
-.project_img>img {
+.overons_img>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,79 +72,34 @@
     border-radius: 3rem;
 
 }
-
 @media (max-width: 1024px) {
     .text {
-        top: 94%;
+      top: 94%;
     }
-
-    .project_amsterdam {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        height: auto;
-        background: red;
-        padding: 15rem 3rem 3rem 3rem;
-        width: 100%;
+  
+    .overons_amsterdam {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: auto;
+      background: red;
+      padding: 15rem 3rem 3rem 3rem;
+      width: 100%;
     }
-
-    .project_text>p {
-        font-size: 1.2rem;
-        width: 40ch;
-        color: #fff;
+  
+    .overons_text>p {
+      font-size: 1.2rem;
+      width: 40ch;
+      color: #fff;
     }
-}
-
+  }
 @media only screen and (max-width: 320px) {
-    .project_text {
+    .overons_text {
         gap: 2rem;
     }
 
-    .project_amsterdam_2>h2 {
-        font-size: 2rem;
-        color: #fff;
-        margin-bottom: 4rem;
-        background: #ff0000;
-        width: 100%;
-        padding: 2rem 1rem 1rem 1rem;
-        text-align: center;
-        border-radius: 0rem 0rem 2rem 2rem;
-    }
-
-    .project_amsterdam_2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        background: #eee;
-        padding: 0rem;
-        width: 100%;
-    }
-
-    .project-img {
-        max-width: 100%;
-        height: 30rem;
-        width: 50rem;
-        border-radius: 1rem;
-        box-shadow: 0px 20px 64px -21px rgba(0, 0, 0, 0.17);
-        object-fit: cover;
-    }
-
-    #projectList {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        gap: 2rem;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-        padding: 1rem 1rem 1rem 1rem;
-    }
-
-    .project_text>p {
+    .overons_text>p {
         font-size: 1rem;
         width: 100%;
         /* Adjust as needed */
@@ -153,13 +107,13 @@
         text-align: center;
     }
 
-    .project_text>h2 {
+    .overons_text>h2 {
         font-size: 3rem;
         color: #fff;
         text-align: center;
     }
 
-    .project_amsterdam {
+    .overons_amsterdam {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -173,7 +127,7 @@
         flex-wrap: wrap;
     }
 
-    .project_img {
+    .overons_img {
         width: 100%;
     }
 

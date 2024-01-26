@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Ontdek de bruisende stad Amsterdam via de officiële website van Gemeente Amsterdam. Leer over stadsontwikkeling, maatschappelijke voorzieningen en actuele projecten. Samen bouwen we aan een duurzame en levendige toekomst voor Amsterdam.">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +14,7 @@
   <link rel="stylesheet" href="{{ asset('hamburgers-master/dist/hamburgers.css') }}">
 
 
-  @vite('resources/css/app.css')
+  @vite('resources/css/main.min.css')
 
   <link rel="icon" href="/images/gemeente-amsterdam-favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-IwbVTUk26pbuFRiO8jFVTSRYlCqV+Lr9RtvzMof9fJz2jsMfh6MtJy6mE6S5b/y3eUw8Ji5R9Ksx5R6/47tjtg==" crossorigin="anonymous" />
@@ -30,7 +32,7 @@
       <ul class="menu-items">
         <li><a href="{{ route('home') }}">Home</a></li>
         <li><a href="{{ route('project') }}">Projecten</a></li>
-        <li><a href="{{ route('opdrachten') }}">Opdrachten</a></li>
+        <li><a href="{{ route('expertise') }}">Expertise</a></li>
       </ul>
     </div>
     <div class="logo">
@@ -49,12 +51,12 @@
   <ul class="menu-items-mobile">
     <li><a href="{{ route('home') }}">Home</a></li>
     <li><a href="{{ route('project') }}">Projecten</a></li>
-    <li><a href="{{ route('opdrachten') }}">Opdrachten</a></li>
+    <li><a href="{{ route('expertise') }}">Expertise</a></li>
   </ul>
 
 
 
-  
+
   <script>
     // Look for .hamburger
     var hamburger = document.querySelector(".hamburger");

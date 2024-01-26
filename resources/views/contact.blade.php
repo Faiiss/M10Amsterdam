@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ontdek de bruisende stad Amsterdam via de officiële website van Gemeente Amsterdam. Leer over stadsontwikkeling, maatschappelijke voorzieningen en actuele projecten. Samen bouwen we aan een duurzame en levendige toekomst voor Amsterdam.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,7 +32,7 @@
             <ul class="menu-items">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('project') }}">Projecten</a></li>
-                <li><a href="{{ route('opdrachten') }}">Opdrachten</a></li>
+                <li><a href="{{ route('over-ons') }}">Over ons</a></li>
             </ul>
         </div>
         <div class="logo">
@@ -42,19 +44,32 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
             <input type="text" placeholder="Search">
-            <div class="contact-button">Contact</div>
+            <div class="contact-button"><a href="{{ route('contact') }}">Contact</a></div>
         </div>
 
     </header>
     <ul class="menu-items-mobile">
         <li><a href="{{ route('home') }}">Home</a></li>
         <li><a href="{{ route('project') }}">Projecten</a></li>
-        <li><a href="{{ route('opdrachten') }}">Opdrachten</a></li>
+        <li><a href="{{ route('over-ons') }}">Over ons</a></li>
+        <li><a href="{{ route('contact') }}">Contact</a></li>
     </ul>
 
-    <div>
-        <h1>Projecten</h1>
-    </div>
+    <section class="contact_amsterdam_section">
+    <form action="#" method="post">
+        <h3>Contact ons</h3>
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Bericht:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Verstuur">
+    </form>
+    </section>
 
     <script>
         // Look for .hamburger
@@ -71,7 +86,7 @@
         });
     </script>
     @vite('resources/js/app.js')
-
+    @vite('resources/js/cards.js')
     </script>
     <footer>
         <img src="/images/Logo_of_Gemeente_Amsterdam.svg" alt="Logo" class="footer-logo">
