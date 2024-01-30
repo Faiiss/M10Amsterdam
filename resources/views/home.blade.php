@@ -22,37 +22,9 @@
 </head>
 
 <body>
-  <header>
-    <div class="menu">
-      <button class="hamburger hamburger--spin" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <ul class="menu-items">
-        <li><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ route('project') }}">Projecten</a></li>
-        <li><a href="{{ route('over-ons') }}">Over ons</a></li>
-      </ul>
-    </div>
-    <div class="logo">
-      <img src="/images/Logo_of_Gemeente_Amsterdam.svg" alt="Gemeente Amsterdam Logo">
-    </div>
 
-    <div class="search">
-      <button class="search-icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-      <input type="text" placeholder="Search">
-      <div class="contact-button">Contact</div>
-    </div>
+  @include('header')
 
-  </header>
-  <ul class="menu-items-mobile">
-    <li><a href="{{ route('home') }}">Home</a></li>
-    <li><a href="{{ route('project') }}">Projecten</a></li>
-    <li><a href="{{ route('over-ons') }}">Over ons</a></li>
-  </ul>
   <section class="slideshow-container">
     <div class="slider">
       <div class="slide">
@@ -96,6 +68,7 @@
     </div>
   </section>
 
+  @include('footer')
   <script>
     // Look for .hamburger
     var hamburger = document.querySelector(".hamburger");
@@ -113,40 +86,7 @@
   @vite('resources/js/app.js')
 
   </script>
-  <footer>
-    <img src="/images/Logo_of_Gemeente_Amsterdam.svg" alt="Logo van Gemeente Amsterdam" class="footer-logo">
-    <p>&copy; 2024 Gemeente Amsterdam.</p>
-    <p>Designed by <a href="https://yourwebsite.com" target="_blank"> Faiss Designs</a></p>
 
-    <!-- Social Media Icons -->
-    <div class="social-icons">
-      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-  </footer>
-
-
-  <!-- Scroll-to-top button -->
-  <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
-
-  <script>
-    // Function to scroll to the top of the page
-    function scrollToTop() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-    }
-
-    // Show/hide scroll-to-top button based on scroll position
-    window.onscroll = function() {
-      var scrollButton = document.getElementById('scroll-to-top');
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollButton.style.display = 'block';
-      } else {
-        scrollButton.style.display = 'none';
-      }
-    };
-  </script>
 </body>
 
 </html>
