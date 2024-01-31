@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Ontdek de bruisende stad Amsterdam via de officiële website van Gemeente Amsterdam. Leer over stadsontwikkeling, maatschappelijke voorzieningen en actuele projecten. Samen bouwen we aan een duurzame en levendige toekomst voor Amsterdam.">
@@ -20,52 +17,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-IwbVTUk26pbuFRiO8jFVTSRYlCqV+Lr9RtvzMof9fJz2jsMfh6MtJy6mE6S5b/y3eUw8Ji5R9Ksx5R6/47tjtg==" crossorigin="anonymous" />
     <title>Gemeente Amsterdam</title>
 </head>
+@include('header')
 
-<body>
-    @include('header')
-    <section class="contact_amsterdam_section">
-        
+<section class="contact_amsterdam_section">
+    <form action="{{ route('contacts.update', $contact->id) }}" method="post">
+        @csrf
+        @method('put')
+        <h3>Edit Contact</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ $contact->name }}" required>
 
-        <form action="{{ route('contacts.store') }}" method="post">
-            @csrf
-            <h3>Contact ons</h3>
-            <label for="name">Naam:</label>
-            <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="{{ $contact->email }}" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required>{{ $contact->message }}</textarea>
 
-            <label for="message">Bericht:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button class="contact_button" type="submit">Verstuur</button>
-        </form>
-
-        <!-- Include the messages or errors section here if you want to display success or validation messages -->
-
-        <!-- You can include links to other views here -->
-        <p>View <a href="{{ route('contacts.index') }}">Contact List</a></p>
-        <!-- You can add other links as needed -->
-    </section>
-    @include('footer')
-    <script>
-        // Look for .hamburger
-        var hamburger = document.querySelector(".hamburger");
-        // Look for .menu-items
-        var menuItems = document.querySelector(".menu-items-mobile");
-
-        // On click
-        hamburger.addEventListener("click", function() {
-            // Toggle class "is-active" on hamburger
-            hamburger.classList.toggle("is-active");
-            // Toggle class "show-menu" on menu items
-            menuItems.classList.toggle("show-menu");
-        });
-    </script>
-    @vite('resources/js/app.js')
-    @vite('resources/js/cards.js')
-    </script>
-
-</body>
-
-</html>
+        <button class="contact_button">Update Contact</button>
+    </form>
+    <form action="{{ route('contacts.destroy', $contact->id) }}" method="post" onsubmit="return confirm('Are you sure you want to delete this contact?')">
+        @csrf
+        @method('delete')
+        <button class="contact_button" type="submit" class="delete_button">Delete Contact</button>
+    </form>
+</section>
+@include('footer')

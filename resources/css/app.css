@@ -513,7 +513,8 @@ label {
   font-weight: 700;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 8px;
   border-radius: 4px;
@@ -521,24 +522,65 @@ input, textarea {
   color: #fff;
 }
 
-input[type=submit] {
+.contact_button {
   background-color: #ff0000;
   color: #fff;
   cursor: pointer;
   transition: 0.4s;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
 }
 
-input[type=submit]:hover {
+.contact_button:hover {
   background-color: #990000;
 }
 
 .contact_amsterdam_section {
+  gap: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   margin-top: 10rem;
   margin-bottom: 10rem;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.contact_amsterdam_section > p {
+  color: white;
+}
+
+.amsterdam_list_title {
+  color: white;
+  font-size: 3rem;
+}
+
+.amsterdam_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.amsterdam_list_item {
+  color: white;
+  background: red;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.amsterdam_list_item:hover {
+  cursor: pointer;
+  padding: 3rem;
+}
+
+.amsterdam_list_item > a {
+  color: white;
 }
 
 .search {
